@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="google-site-verification" content="6uPfnvfrcxjM3eRQs1pxJ5L6nSTOQ9tkeVS7BQTLuP0" />
+    <meta name="msvalidate.01" content="751214A891154DE2B222B4E34D637000" />
+    <link rel="shortcut icon" href="http://kegonsaseedfund.com/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/ico" href="http://kegonsaseedfund.com/favicon.ico" />
+
+    <meta name="description"
+          content="The Kegonsa Seed Fund is Wisconsin's premier seed venture capital fund. It is managed by Kegonsa Capital Partners, LLC, a leading Wisconsin venture capital management firm." />
+    <meta name="Keywords"
+          content="money for minnows, seed funding, seed venture capital, wisconsin venture capital, wisconsin entrepreneurs, wisconsin new businesses, wisconsin job creation" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seed Funding | Seed Venture Capital | Money for Minnows</title>
+
+    <meta name="robots" content="all" />
+    <meta name="Revist-After" content="15 days" />
+    <meta name="city" content="Fitchburg" />
+    <meta name="country" content="United States (USA)" />
+    <meta name="state" content="WI" />
+    <meta name="zip code" content="53711" />
+    <noscript id="deferred-styles">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link async href="css/custom.css?v=1.0.7" rel="stylesheet" />
+    </noscript>
+    <script>
+        var loadDeferredStyles = function () {
+            var addStylesNode = document.getElementById("deferred-styles");
+            var replacement = document.createElement("div");
+            replacement.innerHTML = addStylesNode.textContent;
+            document.body.appendChild(replacement)
+            addStylesNode.parentElement.removeChild(addStylesNode);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(function () { window.setTimeout(loadDeferredStyles, 0); });
+        else window.addEventListener('load', loadDeferredStyles);
+    </script>
+</head>
+
+<body ng-app="app" ng-controller="pageCtrl">
+    <nav class="ani-mated fadeInRight d-none d-md-block">
+        <div class="container" style="border: none; color: black;">
+            <div class="row no-gutters">
+                <div class="col-lg-5 col-sm-0"></div>
+                <div class="col-lg-7 col-sm-12">
+                    <div id="mynav" class="row">
+                        <div class="col-2"><a href="#!/" ng-class="{'active' : $location.path() == '/' }">Home</a></div>
+                        <div class="col"><a href="#!InvestmentStrategy" ng-class="{'active' : $location.path() == '/InvestmentStrategy' }">Investment Strategy</a></div>
+                        <div class="col"><a href="#!Management" ng-class="{'active' : $location.path() == '/Management' }">Management</a></div>
+                        <div class="col-2"><a href="#!Exits" ng-class="{'active' : $location.path() == '/Exits' }">Exits</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="content">
+        <section id="hero" ng-class="{'d-none' : $location.path() != '/' }" ng-cloak>
+            <div class="container">
+                <div class="row">
+                    <div class="column col">
+                        <img src="images/logo_left.png" class="animated fadeInLeft">
+                    </div>
+                    <div class="column col">
+                        <img src="images/tagline.png" class="animated fadeInRight">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="hero-sm" ng-class="{'d-none' : $location.path() == '/' }" ng-cloak></section>
+        <nav id="mobilenav" class="d-none d-mdorless-block d-md-none">
+            <div class="container">
+                <div id="mynav" class="row">
+                    <div class="col-sm-6"><a href="#!/" ng-class="{'active' : $location.path() == '/' }">Home</a></div>
+                    <div class="col-sm-6"><a href="#!InvestmentStrategy" ng-class="{'active' : $location.path() == '/InvestmentStrategy' }">Investment Strategy</a></div>
+                    <div class="col-sm-6"><a href="#!Management" ng-class="{'active' : $location.path() == '/Management' }">Management</a></div>
+                    <div class="col-sm-6"><a href="#!Exits" ng-class="{'active' : $location.path() == '/Exits' }">Exits</a></div>
+                </div>
+            </div>
+        </nav>
+        <div ng-view></div>
+    </div>
+
+    <footer class="animated fadeInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col" onclick="window.open('https://www.dropbox.com/s/n5jrvuzq5j31ybs/a%20Money%20for%20Minnows%20Venture%20Capital%20Investment%20Strategy%20june%2026%2019.docx?dl=0 '); window.open('https://www.dropbox.com/s/uffkw8imx6eojgd/b%20Money%20for%20Minnows%20an%20Investment%20Strategy%20for%20FofF%20june%2026%2019.docx?dl=0'); window.open('https://www.dropbox.com/s/gsz9ehnsacv4c6e/c%20Money%20for%20Minnows%20-%20Fund%20of%20Funds%20june%2026%2019.docx?dl=0')">
+                    <img src="images/mfm.png" class="img-contain-100" />
+                </div>
+                <div class="col-6 address">
+                    <div>Kegonsa Capital Partners, LLC</div>
+                    <a href="http://kegonsaseedfund.com/" onclick="pageTracker._trackEvent('ClickTrack', 'Links', 'Kegonsa Seed Fund');">kegonsaseedfund.com</a>
+                    <a href="http://kegonsacoinvestfund.com" target="_blank" onclick="pageTracker._trackEvent('ClickTrack', 'Links', 'Kegonsa Coinvest Fund');">kegonsacoinvestfund.com</a>
+                    <a href="http://badgerfundoffunds.com" target="_blank" onclick="pageTracker._trackEvent('ClickTrack', 'Links', 'Badger Fund of Funds');">badgerfundoffunds.com</a>
+                </div>
+                <div class="col">
+                    <a target="_blank" href="http://kegonsapartners.com/">
+                        <img src="images/KCPLogo.png" alt="" class="img-contain-100" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js" integrity="sha256-47AQCzX6dqzjicKe4PabaBJtLnWffl34LU9WJUulNog=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js" integrity="sha256-AL1+LnGW9wl5bbvR2aXuGAmYsPKLYHzFbeRyHvPUHw8=" crossorigin="anonymous"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/pageCtrl.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var i = 1;
+
+            setInterval(function () {
+                var rows = $(".rotator .row");
+
+                if (i > rows.length - 1)
+                    i = 0;
+
+                var prev = i > 0 ? rows[i - 1] : rows[rows.length - 1];
+                var cur = rows[i];
+
+                $(prev).removeClass("fadeInRight").addClass("fadeOutLeft")
+
+                setTimeout(function () {
+                    $(prev).addClass("d-none");
+                    $(cur).removeClass("d-none").removeClass("fadeOutLeft").addClass("fadeInRight");
+                }, 1000);
+
+                i++;
+
+            }, 5000);
+        })
+    </script>
+</body>
+</html>
