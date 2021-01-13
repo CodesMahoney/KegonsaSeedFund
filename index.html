@@ -41,17 +41,17 @@
     <base href="/">
 </head>
 
-<body ng-app="app" ng-controller="pageCtrl">
+<body>
     <nav class="ani-mated fadeInRight d-none d-md-block">
         <div class="container" style="border: none; color: black;">
             <div class="row no-gutters">
                 <div class="col-lg-5 col-sm-0"></div>
                 <div class="col-lg-7 col-sm-12">
                     <div id="mynav" class="row">
-                        <div class="col-2"><a href="/" ng-class="{'active' : $location.path() == '/' }">Home</a></div>
-                        <div class="col"><a href="/InvestmentStrategy" ng-class="{'active' : $location.path() == '/InvestmentStrategy' }">Investment Strategy</a></div>
-                        <div class="col"><a href="/Management" ng-class="{'active' : $location.path() == '/Management' }">Management</a></div>
-                        <div class="col-2"><a href="/Exits" ng-class="{'active' : $location.path() == '/Exits' }">Exits</a></div>
+                        <div class="col-2"><a href="/" class="active">Home</a></div>
+                        <div class="col"><a href="/InvestmentStrategy">Investment Strategy</a></div>
+                        <div class="col"><a href="/Management">Management</a></div>
+                        <div class="col-2"><a href="/Exits">Exits</a></div>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
     </nav>
 
     <div id="content">
-        <section id="hero" ng-class="{'d-none' : $location.path() != '/' }" ng-cloak>
+        <section id="hero">
             <div class="container">
                 <div class="row">
                     <div class="column col">
@@ -71,18 +71,71 @@
                 </div>
             </div>
         </section>
-        <section id="hero-sm" ng-class="{'d-none' : $location.path() == '/' }" ng-cloak></section>
         <nav id="mobilenav" class="d-none d-mdorless-block d-md-none">
             <div class="container">
                 <div id="mynav" class="row">
-                    <div class="col-sm-6"><a href="/" ng-class="{'active' : $location.path() == '/' }">Home</a></div>
-                    <div class="col-sm-6"><a href="/InvestmentStrategy" ng-class="{'active' : $location.path() == '/InvestmentStrategy' }">Investment Strategy</a></div>
-                    <div class="col-sm-6"><a href="/Management" ng-class="{'active' : $location.path() == '/Management' }">Management</a></div>
-                    <div class="col-sm-6"><a href="/Exits" ng-class="{'active' : $location.path() == '/Exits' }">Exits</a></div>
+                    <div class="col-sm-6"><a href="/" class="active">Home</a></div>
+                    <div class="col-sm-6"><a href="/InvestmentStrategy">Investment Strategy</a></div>
+                    <div class="col-sm-6"><a href="/Management">Management</a></div>
+                    <div class="col-sm-6"><a href="/Exits">Exits</a></div>
                 </div>
             </div>
         </nav>
-        <div ng-view></div>
+        <section id="About" class="animated fadeInUp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Welcome to the Kegonsa Seed Fund</h1>
+                        <p>
+                            Kegonsa Seed Fund I, LP is Wisconsin's premier seed venture capital fund. The Fund is
+                            managed by <a href="http://kegonsapartners.com/" target="_blank">
+                                Kegonsa Capital Partners,
+                                LLC
+                            </a>, a Wisconsin-based venture capital management firm.
+                            The primary Fund objective is investor IRR determined by GAAP and benchmarked to Cambridge
+                            and Associates venture capital index see <a href="https://www.cambridgeassociates.com/our-insights/introduction-to-benchmarks/"
+                                                                        target="_blank">Cambridge and Associates venture capital index</a>.
+                            On January 15, 2010, the Kegonsa Seed Fund completed its investment period; at this time,
+                            the
+                            Fund is no longer making investments in new portfolio companies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="thumbsection" class="animated fadeInUp">
+            <div class="container">
+                <h1>Kegonsa Seed Fund Portfolio Companies</h1>
+                <div class="rotator">
+                    <div class="row animated fadeInRight">
+                        <div class="col" style="background-image: url('images/portfolio/150x100/ALICE_LOGO.jpg');"></div>
+                        <div class="col" style="background-image: url('images/portfolio/150x100/Brazen.png');"></div>
+                        <div class="col" style="background-image: url('images/portfolio/150x100/Idle Free.png');"></div>
+                        <div class="col" style="background-image: url('images/portfolio/150x100/Intelligent Bio-Systems.png');"></div>
+                        <div class="col" style="background-image: url('images/portfolio/150x100/JellyFish.png');"></div>
+                    </div>
+
+                    <div class="row animated d-none fadeInRight">
+                        <div class="col" style="background-image: url('images/portfolio/150x100/medicalcyberworlds.png');"></div>
+                        <div class="col" style="background-image: url('images/portfolio/150x100/NanoMedex.png');"></div>
+                        <div class="col" style="background-image: url('images/portfolio/150x100/Networked Insights.png');"></div>
+                        <div class="col" style="background-image: url('images/portfolio/150x100/ohigo.jpg');"></div>
+                    </div>
+
+                    <div class="row animated d-none fadeInRight">
+                        <div class="col" style="background-image: url('images/portfolio/150x100/Praesto.png');"></div>
+                        <div class="col" style="background-image: url('images/portfolio/150x100/Semba Biosciences.png');"></div>
+                        <div class="col" style="background-image: url('images/portfolio/150x100/Stealth Therapeutics.png');"></div>
+                        <div class="col" style="background-image: url('images/portfolio/150x100/TrailMaps.png');"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="disclosure" class="animated fadeInUp">
+            <div class="container">
+                <strong>Disclosure: </strong> The Kegonsa Seed Fund is not seeking investors in the Fund nor in any portfolio companies. The Kegonsa Seed Fund is no longer making investments in new companies
+            </div>
+        </section>
     </div>
 
     <footer class="animated fadeInUp">
@@ -93,9 +146,9 @@
                 </div>
                 <div class="col-6 address">
                     <div>Kegonsa Capital Partners, LLC</div>
-                    <a href="http://kegonsaseedfund.com/" onclick="pageTracker._trackEvent('ClickTrack', 'Links', 'Kegonsa Seed Fund');">kegonsaseedfund.com</a>
-                    <a href="http://kegonsacoinvestfund.com" target="_blank" onclick="pageTracker._trackEvent('ClickTrack', 'Links', 'Kegonsa Coinvest Fund');">kegonsacoinvestfund.com</a>
-                    <a href="http://badgerfundoffunds.com" target="_blank" onclick="pageTracker._trackEvent('ClickTrack', 'Links', 'Badger Fund of Funds');">badgerfundoffunds.com</a>
+                    <a href="http://kegonsaseedfund.com/" target="_blank">kegonsaseedfund.com</a>
+                    <a href="http://kegonsacoinvestfund.com" target="_blank">kegonsacoinvestfund.com</a>
+                    <a href="http://badgerfundoffunds.com" target="_blank">badgerfundoffunds.com</a>
                 </div>
                 <div class="col">
                     <a target="_blank" href="http://kegonsapartners.com/">
@@ -107,10 +160,6 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js" integrity="sha256-47AQCzX6dqzjicKe4PabaBJtLnWffl34LU9WJUulNog=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js" integrity="sha256-AL1+LnGW9wl5bbvR2aXuGAmYsPKLYHzFbeRyHvPUHw8=" crossorigin="anonymous"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/pageCtrl.js"></script>
     <script type="text/javascript">
         $(function () {
             var i = 1;
