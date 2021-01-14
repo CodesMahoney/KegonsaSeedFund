@@ -1,4 +1,4 @@
 {
-  "route": "/Exits",
-  "serve": "/Exits.html"
+  "route": "/exits",
+  "serve": "/exits.html"
 }
