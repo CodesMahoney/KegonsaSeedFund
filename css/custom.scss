@@ -266,10 +266,27 @@ $containwidth: 100;
     border: none;
 }
 
-/*.maincontent .thumbnail-section img {
-    float: left;
-    width: 33%;
-}*/
+#thumbsection 
+{
+    table
+    {
+        tr td
+        {
+            vertical-align: middle;
+        }
+
+        img {
+            width: 7em;
+            margin: 0px 5px;
+        }
+
+        td#Operating, td#Redemption
+        {
+            width: 18em; 
+            text-align: center;
+        }    
+    }    
+}
 
 .maincontent #exits.thumbnail-section img {
     width: 25%;
@@ -339,6 +356,20 @@ footer .address a:before {
 @media (max-width: 1024px) {
     .container {
         width: 100%;
+    }
+}
+
+@media (max-width: 960px)
+{
+    #thumbsection 
+    {
+        table
+        {
+            img {
+                width: 8em;
+                margin: 10px;
+            }
+        }    
     }
 }
 
